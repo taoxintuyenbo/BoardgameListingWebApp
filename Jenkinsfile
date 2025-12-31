@@ -1,3 +1,4 @@
-@Library(['share-library', 'share-library-build', 'share-library-test']) _
+@Library(['share-library', 'share-library-build', 'share-library-test', 'share-library-deploy']) _
 pipelineJava()
+
 
