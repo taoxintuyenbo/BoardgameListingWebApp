@@ -1,0 +1,11 @@
+version: '3'
+
+services: 
+  ${NEXUS_ARTIFACT_ID}:
+    container_name: ${NEXUS_ARTIFACT_ID}
+    image: ${VERSION}
+    ports:
+      - 8080:8080
+    volumes:
+      - /root/${NEXUS_ARTIFACT_ID}:/app/logs
+    restart: unless-stopped
